@@ -1,6 +1,6 @@
 <?php
 
-namespace Fredde\Ip;
+namespace Fredde\IpController;
 
 use Anax\DI\DIFactoryConfig;
 use Anax\Response\ResponseUtility;
@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * ValController test class.
  */
-class ValControllerTest extends TestCase
+class GeoControllerTest extends TestCase
 {
     protected $di;
 
@@ -31,7 +31,7 @@ class ValControllerTest extends TestCase
      */
     public function testGet()
     {
-        $contClass = new ValController();
+        $contClass = new GeoController();
         $contClass->setDI($this->di);
 
         $result = $contClass->indexActionGet();
@@ -43,7 +43,7 @@ class ValControllerTest extends TestCase
      */
     public function testPost()
     {
-        $contClass = new ValController();
+        $contClass = new GeoController();
         $contClass->setDI($this->di);
 
         $result = $contClass->indexActionPost();

@@ -3,9 +3,9 @@
 return [
     "routes" => [
         [
-            "info" => "IP-validator",
+            "info" => "IP-validator (API)",
             "mount" => "api",
-            "handler" => "\Fredde\Ip\ApiController",
+            "handler" => "\Fredde\IpController\ApiController",
         ],
     ]
 ];

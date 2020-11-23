@@ -1,9 +1,10 @@
 <?php
 
-namespace Fredde\Ip;
+namespace Fredde\IpController;
 
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
+use Fredde\Ip\ValCheck;
 
 /**
  * validator for IP-addresses

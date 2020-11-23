@@ -1,9 +1,10 @@
 <?php
 
-namespace Fredde\Ip;
+namespace Fredde\IpController;
 
 use Anax\Commons\ContainerInjectableInterface;
 use Anax\Commons\ContainerInjectableTrait;
+use Fredde\Ip\ValCheck;
 
 /**
  * API validator for IP-addresses
@@ -13,14 +14,14 @@ class ApiController implements ContainerInjectableInterface
     use ContainerInjectableTrait;
 
     /**
-     * get method for ip page
+     * get method for api page
      *
-     * @return object render ip-page
+     * @return object render api-page
      */
     public function indexActionGet() : object
     {
         $page = $this->di->get("page");
-        $title = "IP-validering";
+        $title = "IP-validering (API)";
 
         $page->add("ip/apiValidator");
 

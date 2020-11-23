@@ -5,7 +5,7 @@ return [
         [
             "info" => "IP-validator",
             "mount" => "ip",
-            "handler" => "\Fredde\Ip\ValController",
+            "handler" => "\Fredde\IpController\ValController",
         ],
     ]
 ];

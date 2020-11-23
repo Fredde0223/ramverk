@@ -1,6 +1,6 @@
 <?php
 
-namespace Fredde\Ip;
+namespace Fredde\IpController;
 
 use Anax\DI\DIFactoryConfig;
 use Anax\Response\ResponseUtility;
@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * ValController test class.
  */
-class ApiControllerTest extends TestCase
+class ValControllerTest extends TestCase
 {
     protected $di;
 
@@ -29,9 +29,9 @@ class ApiControllerTest extends TestCase
     /**
      * testing the index get
      */
-    public function testIndGet()
+    public function testGet()
     {
-        $contClass = new ApiController();
+        $contClass = new ValController();
         $contClass->setDI($this->di);
 
         $result = $contClass->indexActionGet();
@@ -39,26 +39,14 @@ class ApiControllerTest extends TestCase
     }
 
     /**
-     * testing the validate get
+     * testing the index post
      */
-    public function testValGet()
+    public function testPost()
     {
-        $contClass = new ApiController();
+        $contClass = new ValController();
         $contClass->setDI($this->di);
 
-        $result = $contClass->validateActionGet();
-        $this->assertIsArray($result);
-    }
-
-    /**
-     * testing the vaidate post
-     */
-    public function testValPost()
-    {
-        $contClass = new ApiController();
-        $contClass->setDI($this->di);
-
-        $result = $contClass->validateActionPost();
-        $this->assertIsArray($result);
+        $result = $contClass->indexActionPost();
+        $this->assertInstanceOf(ResponseUtility::class, $result);
     }
 }
