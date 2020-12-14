@@ -4,7 +4,7 @@ namespace Anax\View;
 
 ?><h1>IP-validering (API)</h1>
 
-<p>Detta är en validator för olika IP-adresser med hjälp av ett API. Det första sättet att jobba med API:et är genom att en query-sträng ange en IP-adress. Detta ger en resopns i json-format.</p>
+<p>Detta är en validator för olika IP-adresser med hjälp av ett API. Det första sättet att jobba med API:et är genom att en query-sträng ange en IP-adress. Detta ger en respons i json-format.</p>
 
 <p><a href="api/validate?ip=127.0.0.1">Exempel 1: /validate?ip=127.0.0.1</a></p>
 <p><a href="api/validate?ip=0000:0000:0000:0000:0000:0000:0000:0001">Exempel 2: /validate?ip=0000:0000:0000:0000:0000:0000:0000:0001</a></p>

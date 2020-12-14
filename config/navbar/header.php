@@ -83,5 +83,10 @@ return [
             "url" => "geo",
             "title" => "Kontroller för att hitta IP-adressers position",
         ],
+        [
+            "text" => "DI (väderservice)",
+            "url" => "di",
+            "title" => "dependency injection kmom03 (weather)",
+        ],
     ],
 ];
