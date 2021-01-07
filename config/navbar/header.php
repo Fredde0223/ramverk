@@ -88,5 +88,10 @@ return [
             "url" => "di",
             "title" => "dependency injection kmom03 (weather)",
         ],
+        [
+            "text" => "Boklista",
+            "url" => "book",
+            "title" => "Boklist",
+        ],
     ],
 ];
